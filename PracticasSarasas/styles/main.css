@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: red;
+}
+
+.destacado{
+    color: blue;
+    font-size: large;
+    font-family: cursive;
+}
+
+#contenedor{
+    color: cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+}

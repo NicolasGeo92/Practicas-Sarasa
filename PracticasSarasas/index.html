@@ -5,18 +5,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Las etiquetas meta sirven como piezas importantes de información para los motores de búsqueda.-->
         <title>Practicas Sarasas</title>
+        <link rel = "stylesheet" href = "./styles/main.css" type="text/css">
     </head>
 
     <body> <!--Todo lo que se ve en la pagina va dentro del body-->       
         <header>
-            <h1>Hola mundo! - Hello world!SarasaBUENASOOOOOOOOOOO</h1>
+            <h1>Hola mundo! - Hello world!</h1>
         </header>
         <main> <!--La etiqueta main va la informacion principal de la pagina y la informacion tambien sirve para los motores de busqueda.-->
             <h2>Clase del 09/04</h2>
-            <p>Hoy vamos a ver el tema de la clase 09/04.</p>
-            <p>Vamos a aprender sobre HTML y CSS.</p>
-            <p>Recuerden que la <strong>práctica</strong> es fundamental para aprender.</p>
-            <p>¡Nos vemos en la próxima clase!</p>
+            <p class = "destacado">Hoy vamos a ver el tema de la clase 09/04.</p>
+            <p class = "destacado">Vamos a aprender sobre HTML y CSS.</p>
+            <p id = "contenedor">Recuerden que la <strong>práctica</strong> es fundamental para aprender.</p>
+            <p id = "contenedor">¡Nos vemos en la próxima clase!</p>
         </main>
         <section> <!--El section es para agrupar articulos-->
             <h3>Seccion 1</h3>
@@ -28,6 +29,77 @@
             <article>
                 <h4>Articulo2</h4>
                 <p>Contenido del articulo 2</p>    
+            </article>
+        </section>
+        <section>
+            <article>
+
+                <h3>Formulario de contacto</h3>
+
+                <form method="get">
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name" required/>
+                    <br/>
+
+                    <label for="lname">Apellido: </label>
+                    <input type="text" name="lname" id="lname" required/>
+                    <br/>
+                    
+                    <!--<input type="number" min="0" max="10" step="1">-->
+
+                    <!-- <input type="tel"> -->
+                    
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required/>
+                    <br/>
+
+                    <label for="date">Fecha de nacimiento: </label>
+                    <input type="date" name="date" id="date" required/>
+                    <br/>
+
+                    <label for="country">Pais de nacimiento: </label>
+                    <select name="country" id="country">
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                    <br/>
+
+                    <label for="male">Masculino</label>
+                    <br/>
+                    <input type="radio" name="gender" id="male"/>
+                    <br/>
+
+                    <label for="female">Femenino</label>
+                    <br/>
+                    <input type="radio" name="gender" id="female"/>
+                    <br/>
+
+                    <!-- <input type="password"/> -->
+                     
+                    <label for="work">Trabaja: </label>
+                    <input type="checkbox" name="work" id="work"/>
+                    <br/>
+                    <label for="study">Estudia: </label>
+                    <input type="checkbox" name="study" id="study"/>
+                    <br/>
+
+                    <input type="file"/>
+                    <br/>
+                    
+                    <textarea name="opinion" cols="30" rows="6">Dejanos tu comentario</textarea>
+                    <br/>
+
+                    <input type="reset"/>
+                    <br/>
+
+                    <input type="submit"/>
+                    <br/>
+
+                </form>
+
             </article>
         </section>
         <aside> <!--Sirve para poner contenido que no tiene nada que ver con la página.-->
