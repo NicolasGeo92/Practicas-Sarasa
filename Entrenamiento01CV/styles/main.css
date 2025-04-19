@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    height: 100%;
+    background-color: rgb(203, 201, 201);
+}
+
+/* Datos de la persona */
+.datos__persona{
+    padding: 1.5% 5%;
+    display: flex;
+}
+
+.datos__persona .detalles__datos{
+    width: 40%;
+}
+
+.datos__persona .detalles__datos p{
+    padding-left: 5%;
+}
+
+.foto__cv{
+    border-radius: 15%;
+    width: 13%;
+}
+
+/* Experiencia laboral */
+.experienciaLaboral{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.experienciaLaboral ul{
+    padding-left: 2.8%;
+}
+
+.experienciaLaboral li{
+    padding: 0.2%;
+}
+
+/* Estudios */
+.estudios{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.estudios ul{
+    padding-left: 2.8%;
+}
+
+.estudioListas{
+    padding: 0.2%;
+    text-decoration: underline;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

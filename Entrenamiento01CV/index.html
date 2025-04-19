@@ -5,41 +5,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Curriculum Vitae</title>
+        <link rel="stylesheet" href="./styles/main.css"/>
     </head>
 
     <body>
         
-        <header>
-            <h2>Nombre y Apellido</h2>
-            <h2>Edad</h2>
-            <h2>Domicilio</h2>
-            <h2>Nacionalidad</h2>
-            <h2>Documento</h2>
-        </header>
-
         <main>
-            <section>
+           
+            <section class="datos__persona">
+                <div class="detalles__datos">
+                    <p>Nombre y Apellido</p>
+                    <p>Edad</p>
+                    <p>Domicilio</p>
+                    <p>Nacionalidad</p>
+                    <p>Documento</p>
+                </div>
+
+                <!-- <h2 class="detalles__datos">Nombre y Apellido</h2>
+                <h2 class="detalles__datos">Edad</h2>
+                <h2 class="detalles__datos">Domicilio</h2>
+                <h2 class="detalles__datos">Nacionalidad</h2>
+                <h2 class="detalles__datos">Documento</h2> -->
+
+                <img class="foto__cv" src="./img/homero.jpg" alt="Foto CV"/>
+            </section>
+
+            <section class="experienciaLaboral">
                 <h2>Experiencia laboral</h2>
                 <ul>
-                    <li><a href="https://www.w3schools.com/Html/html_lists.asp" target="_blank">Empresa 1</a></li>
-                    <li><a href="https://www.w3schools.com/Html/html_lists.asp" target="_blank">Empresa 2</a></li>
-                    <li><a href="https://www.w3schools.com/Html/html_lists.asp" target="_blank">Empresa 3</a></li>
+                    <li><a href="https://www.w3schools.com/Html/html_lists.asp" target="_blank">Empresa 1...</a></li>
+                    <li><a href="https://www.w3schools.com/Html/html_lists.asp" target="_blank">Empresa 2...</a></li>
+                    <li><a href="https://www.w3schools.com/Html/html_lists.asp" target="_blank">Empresa 3...</a></li>
                 </ul>
             </section>
-            <section>
+            
+            <section class="estudios">
                 <h2>Estudios</h2>
                 <ul>
-                    <li>Universidad</li>
+                    <li class="estudioListas">Universidad</li>
                     <ul>
-                        <li><a href="https://www.youtube.com/" target="_blank">carrera 1</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">carrera 1...</a></li>
                     </ul>
-                    <li>Cursos</li>
+                    <li class="estudioListas">Cursos</li>
                     <ul>
-                        <li><a href="https://www.youtube.com/" target="_blank">curso 1</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">curso 1...</a></li>
                     </ul>
-                    <li>Secundario</li>
+                    <li class="estudioListas">Secundario</li>
                     <ul>
-                        <li><a href="https://www.youtube.com/" target="_blank">colegio 1</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">colegio 1...</a></li>
                     </ul>
                 </ul>
             </section>
@@ -48,3 +61,13 @@
     </body>
 
 </html>
+
+<!-- PREGUNTAS -->
+
+<!-- 1.¿Si las etiquetas HTML estan bien aplicadas?. En algun momento pense utilizar un HEADER para lo que seria los datos de la persona,
+    como ademas no sabia si es necesario utilizar un ARTICLE dentro de los SECTION, al menos no me parecio necesario en este caso. -->
+
+<!-- 2.¿El centrado esta bien aplicado en el body.? -->
+
+<!-- 3.Hacer que la altura sea el 100% me volvio bastante loco. Googleando encontre que se le debe aplicar a la etiqueta HTML y al BODY. 
+        pero a mi no me funciono hasta que se lo aplique tambien al MAIN. ¿Por que?-->
