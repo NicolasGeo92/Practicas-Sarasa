@@ -30,10 +30,12 @@ main{
 }
 
 .datos__persona .detalles__datos p{
-    padding-left: 5%;
+    font-size: x-large;
+    padding: 1%;
 }
 
 .foto__cv{
+    margin-left: auto;
     border-radius: 15%;
     width: 13%;
 }
