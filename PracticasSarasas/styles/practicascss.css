@@ -1,0 +1,7 @@
+.padre{
+    display: flex;
+}
+
+.hija_1{
+    flex-grow: 2;
+}
