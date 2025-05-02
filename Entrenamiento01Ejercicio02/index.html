@@ -4,12 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 02</title>
+    <link rel="stylesheet" href="./styles/main.css"/>
 </head>
 
 <body>
-    <header>
-        <h1>HOME | CONTACTO</h1>
+    <header class="header">
+           <ul class="header__list">
+                <li class="header__item1">
+                    <a class="header__link" href="" target="_blank">HOME</a>
+                </li>
+                <p>|</p>
+                <li class="header__item2">
+                    <a class="header__link" href="" target="_blank">CONTACTO</a>
+                </li>
+           </ul>
     </header>
+
+    <main class="main">
+        <article class="main__article">
+            <h2>RECETA 1</h2>
+            <img class="main__image" src="./img/Pastel de papa.jpg" alt="Pastel de papa">
+            <h3 class="main__subTitle">Pasos</h3>
+            <ol class="main__ordenList">
+                <li class="main__ordenList__item">Paso 1</li>
+                <li class="main__ordenList__item">Paso 2</li>
+                <li class="main__ordenList__item">Paso 3</li>
+                <li class="main__ordenList__item">Paso 4</li>
+            </ol>
+        </article>
+
+        <article class="main__article">
+            <h2>RECETA 2</h2>
+            <img class="main__image" src="./img/Milanesa.jpg" alt="Milanesas">
+            <h3 class="main__subTitle">Pasos</h3>
+            <ol class="main__ordenList">
+                <li class="main__ordenList__item">Paso 1</li>
+                <li class="main__ordenList__item">Paso 2</li>
+                <li class="main__ordenList__item">Paso 3</li>
+                <li class="main__ordenList__item">Paso 4</li>
+            </ol>
+        </article>
+
+        <article class="main__article">
+            <h2>RECETA 3</h2>
+            <img class="main__image" src="./img/guiso.jpg" alt="Guiso">
+            <h3 class="main__subTitle">Pasos</h3>
+            <ol class="main__ordenList">
+                <li class="main__ordenList__item">Paso 1</li>
+                <li class="main__ordenList__item">Paso 2</li>
+                <li class="main__ordenList__item">Paso 3</li>
+                <li class="main__ordenList__item">Paso 4</li>
+            </ol>
+        </article>
+
+        <article class="main__article">
+            <h2>RECETA 4</h2>
+            <img class="main__image" src="./img/tarta de zapallito.jpg" alt="Tarta de zapallitos">
+            <h3 class="main__subTitle">Pasos</h3>
+            <ol class="main__ordenList">
+                <li class="main__ordenList__item">Paso 1</li>
+                <li class="main__ordenList__item">Paso 2</li>
+                <li class="main__ordenList__item">Paso 3</li>
+                <li class="main__ordenList__item">Paso 4</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
 </body>
 
 </html>
+
+<!-- 1. En los articulos del main donde estan las recetas (.main .main__article) queria centrar
+        los recuadros con justify-content: center pero no pude y finalmente utilice un margin: auto
+        Queria saber si no aplica por estar en columnas (.main) o por que otro motivo.-->
+
+<!-- 2. Esta pregunta es parecida a la 1 pero con justify-content: space-around; si no
+        aplica por que esta en columnas. -->
+
+<!-- 3. En las etiquetas ol y li la extension del bloque se sobrepaso del .main__article
+        creo que lo va a observar mejor en el navegador con la herramienta de desarrolador.
+        ¿Tiene importancia que sobresalga? Espero haber sido claro. -->
+
+<!-- 4. Si se achica la ventana el la RECETA 1 y el header se superponen. No supe como 
+        arreglar esto. ¿Cual seria la forma de hacerlo con los temas que venimos viendo? -->
