@@ -7,6 +7,7 @@ body{
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
+    padding-bottom: 21.55%;
 }
 
 h2{
@@ -14,7 +15,7 @@ h2{
     padding: 0.8%;
 }
 
-/* Header y barra de navegacion*/
+/* Header */
 .header{
     display: flex;
     justify-content: center;
@@ -24,6 +25,7 @@ h2{
     position: fixed;
     width: 100%;
     z-index: 1;
+    font-size: x-large;
 }
 
 .header .header__list{
@@ -42,19 +44,15 @@ h2{
 }
 
 .header__link{
-    font-size: x-large;
     text-decoration: none;
 }
-
-.header .header__list p{
-    font-size: x-large;
-}
-/* Header y barra de navegacion*/
+/* Header */
 
 /* Main */
 .main{
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 85px);
 }
 /* Main */
 
@@ -73,7 +71,6 @@ h2{
     position: relative;
     left: 30%;
     width: 40%;
-    height: 10%;
 }
 /* Imagenes del main */
 
@@ -87,16 +84,17 @@ h2{
 }
 /* Sub-titulo (Pasos) */
 
-/* Lista */
+/* Listas */
 .main .main__article .main__ordenList{
     position: relative;
     left: 7.5%;
+    padding-bottom: 0.5%;
 }
 
 .main__article .main__ordenList .main__ordenList__item{
     padding-left: 2%;
 }
-/* Lista */
+/* Listas */
 
 /* Pie de pagina */
 .footer{
@@ -105,9 +103,8 @@ h2{
     border: #000000 1px solid;
     padding: 1.5%;
     font-size: x-large;
-    margin-top: 4%;
+    box-sizing: border-box;
     position: fixed;
     width: 100%;
-    z-index: 1;
 }
 /* Pie de pagina */
