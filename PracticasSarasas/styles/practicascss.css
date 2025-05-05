@@ -1,7 +1,23 @@
-.padre{
-    display: flex;
-}
-
 .hija_1{
     align-self: center;
+    text-shadow: 20px 10px 10px;
+    color: rgba(255, 0, 25, 1);
+    font-size: 15em;
+}
+
+.hija_2{
+    font-size: 15em;
+    border: rgba(0, 100, 199, 1) 2px solid;
+    background-color: rgba(0, 100, 199, 1);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 10px 10px 0px rgba(0, 0, 0 ,1);
+    opacity: 20%;
+}
+
+.hija_3{
+    font-size: 15em;
+    border: rgba(168, 143, 0, 1) 2px solid;
+    background-color: rgba(168, 143, 0, 1);
+    background: linear-gradient(to right, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73,165,191,1) 100%);
+    transform: skew(20deg 20deg);
 }
