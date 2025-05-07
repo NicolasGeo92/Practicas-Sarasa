@@ -7,7 +7,7 @@ body{
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    padding-bottom: 21.55%;
+    padding-bottom: 29.35%;
 }
 
 h2{
@@ -26,6 +26,8 @@ h2{
     width: 100%;
     z-index: 1;
     font-size: x-large;
+    background-color: rgb(69, 69, 71, 1);
+    color: aliceblue;
 }
 
 .header .header__list{
@@ -45,6 +47,7 @@ h2{
 
 .header__link{
     text-decoration: none;
+    color: white;
 }
 /* Header */
 
@@ -106,5 +109,7 @@ h2{
     box-sizing: border-box;
     position: fixed;
     width: 100%;
+    color: aliceblue;
+    background-color: rgb(69, 69, 71, 1);
 }
 /* Pie de pagina */
