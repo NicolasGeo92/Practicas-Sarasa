@@ -1,0 +1,35 @@
+.seccion {
+    display: grid;
+    grid-template-areas:  "head head header header"
+                          "a    b    c      d";
+}
+
+.uno {
+    grid-area: head;
+    background-color: blue;
+}
+
+.dos {
+    grid-area: header;
+    background-color: violet;
+}
+
+.tres {
+    grid-area: a;
+    background-color: red;
+}
+
+.cuatro {
+    grid-area: b;
+    background-color: red;
+}
+
+.cinco {
+    grid-area: c;
+    background-color: red;
+}
+
+.seis {
+    grid-area: d;
+    background-color: red;
+}
