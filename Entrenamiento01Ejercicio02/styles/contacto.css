@@ -9,6 +9,7 @@ body {
         "header"
         "main"
         "footer";
+    gap: 3em;
 }
 
 /* Header */
@@ -45,6 +46,47 @@ body {
 
 .main {
     grid-area: main;
+}
+
+.formulario {
+    display: grid;
+    flex-direction: column;
+    gap: 0.5em;
+    border: 0.1em solid black;
+    width: 80%;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+/* .datosDelUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+} */
+
+.nombre {
+    width: 20%;
+    height: 2em;
+}
+
+.mail {
+    width: 20%;
+    height: 2em;
+}
+
+.tel {
+    width: 20%;
+    height: 2em;
+}
+
+.mensaje {
+    width: 40%;
+    height: 6em;
+}
+
+.enviar {
+    width: 15%;
 }
 
 /* Main y formulario */
