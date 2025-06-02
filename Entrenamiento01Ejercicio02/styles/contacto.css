@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+/* Header */
+
+.header {
+    grid-area: header;
+    padding: 1em;
+    background-color: rgb(69, 69, 71, 1);
+}
+
+.lista-desordenada {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.link {
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.separador {
+    font-size: 2em;
+    color: aliceblue;
+}
+
+/* Header */
+
+/* Main y formulario */
+
+.main {
+    grid-area: main;
+}
+
+/* Main y formulario */
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+}
+
+/* Footer */

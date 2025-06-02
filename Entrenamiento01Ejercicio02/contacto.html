@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/contacto.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <ul class="lista-desordenada">
+                <a class="link" href="./index.html"><li>HOME</li></a>
+                <p class="separador">|</p>
+                <a class="link" href="./contacto.html"><li>CONTACTO</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form action="./index.html" method="get">
+            <input class="nombre" type="text" name="nombre" placeholder="Nombre" required>
+            <input class="mail" type="email" name="mail" placeholder="E-mail" required>
+            <input class="tel" type="tel" name="tel" placeholder="Teléfono" required>
+            <textarea class="mensaje" name="mensaje" rows="4" cols="40">Mensaje</textarea>
+
+            <input class="enviar" type="submit" name="enviar" value="Enviar">
+            <a href="https://www.youtube.com/"><input class="cancelar" type="button" name="cancelar"
+                    value="Cancelar"></a>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
