@@ -12,23 +12,29 @@
     <header class="header">
         <nav class="navegacion">
             <ul class="lista-desordenada">
-                <a class="link" href="./index.html"><li>HOME</li></a>
+                <a class="link" href="./index.html">
+                    <li>HOME</li>
+                </a>
                 <p class="separador">|</p>
-                <a class="link" href="./contacto.html"><li>CONTACTO</li></a>
+                <a class="link" href="./contacto.html">
+                    <li>CONTACTO</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <main class="main">
         <form class="formulario" action="./index.html" method="get">
-            <input class="nombre" type="text" name="nombre" placeholder="Nombre" required>
-            <input class="mail" type="email" name="mail" placeholder="E-mail" required>
-            <input class="tel" type="tel" name="tel" placeholder="Teléfono" required>
-            <textarea class="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+            <input class="nombre form" type="text" name="nombre" placeholder="Nombre" required>
+            <input class="mail form" type="email" name="mail" placeholder="E-mail" required>
+            <input class="tel form" type="tel" name="tel" placeholder="Teléfono" autocomplete="tel" required>
+            <textarea class="mensaje form" name="mensaje" placeholder="Mensaje"></textarea>
 
-            <input class="enviar" type="submit" name="enviar" value="Enviar">
-            <a href="https://www.youtube.com/"><input class="cancelar" type="button" name="cancelar"
-                    value="Cancelar"></a>
+            <section class="envioDeFormulario">
+                <input class="enviar" type="submit" name="enviar" value="Enviar">
+                <a class="link-cancelar" href="https://www.youtube.com/"><input class="cancelar" type="button"
+                        name="cancelar" value="Cancelar"></a>
+            </section>
         </form>
     </main>
 
