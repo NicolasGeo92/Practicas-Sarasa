@@ -10,14 +10,17 @@ body {
         "main"
         "footer";
     gap: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
 }
 
 /* Header */
 
 .header {
     grid-area: header;
-    padding: 1em;
-    background-color: rgb(69, 69, 71, 1);
+    place-items: center;
+    align-content: center;
+    background-color: rgba(69, 69, 71, 1);
 }
 
 .lista-desordenada {
@@ -30,7 +33,6 @@ body {
 
 .link {
     font-size: 2em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: aliceblue;
 }
@@ -46,6 +48,7 @@ body {
 
 .main {
     grid-area: main;
+    display: flex;
 }
 
 .formulario {
@@ -61,41 +64,43 @@ body {
         "mail"
         "tel"
         "mensaje";
-        background-color: rgb(211, 208, 208);
+    background-color: rgb(211, 208, 208);
+    align-items: center;
 }
 
 .form {
     border-radius: 0.5em;
     border: none;
-    padding-left: 0.7em;
+    padding-left: 1em;
 }
 
 .form::placeholder {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
 .nombre {
     grid-area: nombre;
-    width: 30%;
-    height: 2em;
+    width: 40%;
+    height: 3.5em;
 }
 
 .mail {
     grid-area: mail;
-    width: 30%;
-    height: 2em;
+    width: 40%;
+    height: 3.5em;
 }
 
 .tel {
     grid-area: tel;
-    width: 30%;
-    height: 2em;
+    width: 40%;
+    height: 3.5em;
 }
 
 .mensaje {
     grid-area: mensaje;
-    width: 50%;
-    height: 6em;
+    width: 60%;
+    height: 6.5em;
 }
 
 .envioDeFormulario {
@@ -105,14 +110,30 @@ body {
 
 .enviar {
     width: 9.0625rem;
-    height: 2em;
+    height: 2.2em;
+    border-radius: .6em;
     cursor: pointer;
+    background-color: rgba(11, 175, 52, 0.8);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.enviar:hover {
+    background-color: rgba(7, 114, 34, 0.8);
 }
 
 .cancelar {
     width: 9.0625rem;
-    height: 2em;
+    height: 2.2em;
+    border-radius: .6em;
     cursor: pointer;
+    background-color: rgba(180, 14, 14, 0.8);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.cancelar:hover {
+    background-color: rgba(88, 7, 7, 0.8);
 }
 
 .link-cancelar {
@@ -125,6 +146,11 @@ body {
 
 .footer {
     grid-area: footer;
+    background-color: rgba(69, 69, 71, 1);
+    color: aliceblue;
+    font-size: 1.4em;
+    place-items: center;
+    align-content: center;
 }
 
 /* Footer */
