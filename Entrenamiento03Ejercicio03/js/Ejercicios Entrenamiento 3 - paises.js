@@ -52,3 +52,13 @@ const countries = [
   { name: "Hungría", abbreviation: "HU", continent: "Europa", flag: "🇭🇺", language: "Húngaro" }
 ];
 
+const articulo = document.getElementsByTagName("section");
+const sarasa = section.getElementsByTagName("article");
+
+console.log(articulo, sarasa);
+
+// function cambiarBack() {
+//   const sarasa = document.querySelector(".pais");
+
+//   sarasa.addEventListener("click",)
+// }
