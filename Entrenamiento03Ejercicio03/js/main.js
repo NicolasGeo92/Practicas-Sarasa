@@ -52,12 +52,12 @@
 //   { name: "Hungría", abbreviation: "HU", continent: "Europa", flag: "🇭🇺", language: "Húngaro" }
 // ];
 
-const articulo = document.getElementsByTagName("section");
+function cambiarBackground() {
+    const cambiarBackground = document.querySelector(".pais");
 
-console.log(articulo);
+    cambiarBackground.addEventListener("click", function () {
+        document.querySelector(".pais").style.backgroundColor = "red";
+    });
+}
 
-// function cambiarBack() {
-//   const sarasa = document.querySelector(".pais");
-
-//   sarasa.addEventListener("click",)
-// }
+cambiarBackground();
