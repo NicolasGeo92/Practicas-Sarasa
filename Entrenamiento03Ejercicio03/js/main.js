@@ -30,7 +30,7 @@ const countries = [
     { name: "Arabia Saudita", abbreviation: "SA", continent: "Asia", flag: "🇸🇦", language: "Árabe" },
     { name: "Corea del Sur", abbreviation: "KR", continent: "Asia", flag: "🇰🇷", language: "Coreano" },
     { name: "Sudáfrica", abbreviation: "ZA", continent: "África", flag: "🇿🇦", language: "Inglés, Afrikáans, Zulu" },
-    { name: "Suecia", abbreviation: "SE", continent: "Europa", flag: "🇸🇪", language: "Sueco" },
+    { name: "Suecia", abbreviation: "SE", continsent: "Europa", flag: "🇸🇪", language: "Sueco" },
     { name: "Suiza", abbreviation: "CH", continent: "Europa", flag: "🇨🇭", language: "Alemán, Francés, Italiano" },
     { name: "Tailandia", abbreviation: "TH", continent: "Asia", flag: "🇹🇭", language: "Tailandés" },
     { name: "Turquía", abbreviation: "TR", continent: "Asia/Europa", flag: "🇹🇷", language: "Turco" },
@@ -52,38 +52,43 @@ const countries = [
     { name: "Hungría", abbreviation: "HU", continent: "Europa", flag: "🇭🇺", language: "Húngaro" }
 ];  // ----> SON OBJETOS.
 
-let asd = document.querySelectorAll(".pais");
+function infoDePais() {
+    let paises = document.querySelectorAll(".pais");
 
-for (let i = 0; i < countries.length; i++) {
-    console.log(`${countries[i].name} - ${countries[i].flag}`);
+    for (let i = 0; i < countries.length; i++) {
+        paises[i].addEventListener("click", function () {
+            alert(`Pais: ${countries[i].name} \nAbreviatura: ${countries[i].abbreviation} \nContinente: ${countries[i].continent} \nIdioma: ${countries[i].language}`);
+        });
+    }
 }
 
+function backgroundMouseover() {
+    //No se puede usar addEventListener con un nodeList (querySelectorAll).
+    const cambiarBackgroundDelArticle = document.querySelectorAll(".pais");
 
-// function backgroundMouseover() {
-//     //No se puede usar addEventListener con un nodeList (querySelectorAll).
-//     const cambiarBackgroundDelArticle = document.querySelectorAll(".pais");
+    for (let i = 0; i < cambiarBackgroundDelArticle.length; i++) {
+        cambiarBackgroundDelArticle[i].addEventListener("mouseover", function () {
+            //document.querySelectorAll(".pais")[i].style.backgroundColor = "red";
+            this.style.backgroundColor = "rgb(107, 119, 190)";
+            //El this hace referencia al elemento que disparó el evento.
+        });
+    }
+}
 
-//     for (let i = 0; i < cambiarBackgroundDelArticle.length; i++) {
-//         cambiarBackgroundDelArticle[i].addEventListener("mouseover", function () {
-//             //document.querySelectorAll(".pais")[i].style.backgroundColor = "red";
-//             this.style.backgroundColor = "red";
-//             //El this hace referencia al elemento que disparó el evento.
-//         });
-//     }
-// }
+function backgroundMouseout() {
+    //No se puede usar addEventListener con un nodeList (querySelectorAll).
+    const cambiarBackgroundDelArticle = document.querySelectorAll(".pais");
 
-// function backgroundMouseout() {
-//     //No se puede usar addEventListener con un nodeList (querySelectorAll).
-//     const cambiarBackgroundDelArticle = document.querySelectorAll(".pais");
+    for (let i = 0; i < cambiarBackgroundDelArticle.length; i++) {
+        cambiarBackgroundDelArticle[i].addEventListener("mouseout", function () {
+            this.style.backgroundColor = "rgb(190, 185, 185)";
+            //El this hace referencia al elemento que disparó el evento.
+        });
+    }
+}
 
-//     for (let i = 0; i < cambiarBackgroundDelArticle.length; i++) {
-//         cambiarBackgroundDelArticle[i].addEventListener("mouseout", function () {
-//             this.style.backgroundColor = "aqua";
-//             //El this hace referencia al elemento que disparó el evento.
-//         });
-//     }
-// }
+infoDePais();
 
-// backgroundMouseover();
+backgroundMouseover();
 
-// backgroundMouseout();
+backgroundMouseout();

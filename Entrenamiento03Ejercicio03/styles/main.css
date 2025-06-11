@@ -15,5 +15,10 @@ article {
 }
 
 .pais {
-    background-color: aqua;
+    background-color: rgb(190, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
 }
