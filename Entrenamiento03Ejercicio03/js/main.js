@@ -52,6 +52,8 @@ const countries = [
     { name: "Hungría", abbreviation: "HU", continent: "Europa", flag: "🇭🇺", language: "Húngaro" }
 ];  // ----> SON OBJETOS.
 
+const filtrar = document.querySelector(".paisBuscado");
+
 function infoDePais() {
     let paises = document.querySelectorAll(".pais");
 
@@ -86,6 +88,14 @@ function backgroundMouseout() {
         });
     }
 }
+
+filtrar.addEventListener("keyup", function () {
+    const consulta = filtrar.value;
+    const resultado = countries.filter(function(countrie) {
+        return countrie.name.toLowerCase().trim().indexOf(consulta.toLowerCase().trim()) > -1;
+    })
+    console.log(resultado);
+});
 
 infoDePais();
 
