@@ -8,6 +8,11 @@ function cargarTareas() {
     }
 }
 
+// 3. Mostrar tareas en el HTML
 function mostrarTareas() {
     
 }
+
+// 4. Añadir nueva tarea
+
+// 5. Eliminar tarea
