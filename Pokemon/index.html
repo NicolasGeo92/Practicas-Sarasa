@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" >
+</head>
+
+<body>
+    <header>
+        <h1>Elige la criatura para jugar</h1>
+    </header>
+    <main>
+        <section class="pokemons">
+            <div id="pokemon1" name="pokemon1" class="pokemon">
+                <button id="ver-pokemon1" ver="ver-pokemon1" class="ver-pokemon">Ver</button>
+                <img src="" alt="Imagen pokemon 1">
+            </div>
+            <div id="pokemon2" name="pokemon2" class="pokemon">
+                <button id="ver-pokemon2" ver="ver-pokemon2" class="ver-pokemon">Ver</button>
+                <img src="" alt="Imagen pokemon 2">
+            </div>
+            <div id="pokemon3" name="pokemon3" class="pokemon">
+                <button id="ver-pokemon3" ver="ver-pokemon3" class="ver-pokemon">Ver</button>
+                <img src="" alt="Imagen pokemon 3">
+            </div>
+            <div id="pokemon4" name="pokemon4" class="pokemon">
+                <button id="ver-pokemon4" ver="ver-pokemon4" class="ver-pokemon">Ver</button>
+                <img src="" alt="Imagen pokemon 4">
+            </div>
+            <input type="radio" name="pokemon" id="pokemon1">
+            <input type="radio" name="pokemon" id="pokemon2">
+            <input type="radio" name="pokemon" id="pokemon3">
+            <input type="radio" name="pokemon" id="pokemon4">
+        </section>
+        <button id="btn-combatir" class="combatir" disabled> Combatir </button>
+    </main>
+    <section id="modal" class="modal">
+        <article class="modal-content">
+            <p>
+                Pokemon seleccionado
+            </p>
+            <button class="boton"> Aceptar </button>
+        </article>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
