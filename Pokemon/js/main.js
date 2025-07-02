@@ -34,12 +34,12 @@ function habilitarBoton() {
             if (pokemonElegido[i].checked) {
                 botonCombatir.disabled = false;
             }
+            botonCombatir.addEventListener("click", function () {
+                window.location.href = `sarasa.html?Pokemon=${pokemons[i].nombre}`;
+            });
         });
     }
 }
-
-console.log(botonCombatir);
-console.log(pokemonElegido);
 
 habilitarBoton();
 botonAceptar();
