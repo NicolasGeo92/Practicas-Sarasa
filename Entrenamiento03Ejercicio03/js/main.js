@@ -52,8 +52,7 @@ const countries = [
     { name: "Hungría", abbreviation: "HU", continent: "Europa", flag: "🇭🇺", language: "Húngaro" }
 ];  // ----> SON OBJETOS.
 
-const paisesFiltrados = [];
-
+const cuadriculaDePaises = document.querySelector(".cuadricula");
 const filtrar = document.querySelector(".paisBuscado");
 let paises = document.querySelectorAll(".pais");
 
@@ -90,30 +89,43 @@ function backgroundMouseout() {
     }
 }
 
-// filtrar.addEventListener("keyup", function () {
-//     const consulta = filtrar.value;
-//     const resultado = countries.filter(function(countrie) {
-//         return countrie.name.toLowerCase().trim().indexOf(consulta.toLowerCase().trim()) > -1;
-//     })
-// });
+// function filtrado() {
+//     filtrar.addEventListener("keyup", function () {
+//         const consulta = filtrar.value;
+//         const resultado = countries.filter(function (countrie) {
+//             return countrie.name.toLowerCase().trim().indexOf(consulta.toLowerCase().trim()) > -1;
+//         })
+//         console.log(resultado);
+//     });
+// }
 
 function filtrado() {
+    const paisesEncontrados = document.querySelector(".filter");
+
     filtrar.addEventListener("keyup", function () {
-        const consulta = filtrar.value;
-        const resultado = countries.filter(function (countrie) {
-            countrie.name.toLowerCase().trim().indexOf(consulta.toLowerCase().trim()) > -1;
-        })
-        console.log(resultado);
-        for (let i = 0; i < countries.length; i++) {
-            if (JSON.stringify(resultado) === JSON.stringify(countries[i])) {
-                console.log("ASd");
+        const consulta = filtrar.value.toLowerCase().trim();
+        // const paisesFiltrados = countries.filter(function (countrie) {
+        //     return countrie.name.toLowerCase().trim().indexOf(consulta) > -1;
+        // })
+        const paisesFiltrados = countries.filter(function (countrie) {
+            if (countrie.name.toLowerCase().trim().indexOf(consulta) > -1) {
+                paisesEncontrados.style.display = "grid";
+                cuadriculaDePaises.style.display = "none";
+                const articulo = document.createElement("article"); //Creo un elemento article para despues ser hijo de .filter.
+                const asd = document.createTextNode(consulta); //Le agrego el texto ingresado.
+                paisesEncontrados.appendChild(articulo); //Hago que article sea hijo de .filter.
+                articulo.appendChild(asd); //Hago que el texto ingresado sea hijo de article.
             }
-        }
+        })
+        console.log(paisesFiltrados);
     });
 }
-
-
-
+// const paisesEncontrados = document.querySelector(".filter"); //Lo traigo del HTML.
+// const articulo = document.createElement("article"); //Creo un elemento article para despues ser hijo de .filter.
+// const asd = document.createTextNode(consulta); //Le agrego el texto ingresado.
+// paisesEncontrados.appendChild(articulo); //Hago que article sea hijo de .filter.
+// articulo.appendChild(asd); //Hago que el texto ingresado sea hijo de article.
+// paisesEncontrados.style.display = "grid";
 filtrado();
 
 infoDePais();
