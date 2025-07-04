@@ -52,11 +52,12 @@ const countries = [
     { name: "Hungría", abbreviation: "HU", continent: "Europa", flag: "🇭🇺", language: "Húngaro" }
 ];  // ----> SON OBJETOS.
 
+const paisesFiltrados = [];
+
 const filtrar = document.querySelector(".paisBuscado");
+let paises = document.querySelectorAll(".pais");
 
 function infoDePais() {
-    let paises = document.querySelectorAll(".pais");
-
     for (let i = 0; i < countries.length; i++) {
         paises[i].addEventListener("click", function () {
             alert(`Pais: ${countries[i].name} \nAbreviatura: ${countries[i].abbreviation} \nContinente: ${countries[i].continent} \nIdioma: ${countries[i].language}`);
@@ -89,13 +90,31 @@ function backgroundMouseout() {
     }
 }
 
-filtrar.addEventListener("keyup", function () {
-    const consulta = filtrar.value;
-    const resultado = countries.filter(function(countrie) {
-        return countrie.name.toLowerCase().trim().indexOf(consulta.toLowerCase().trim()) > -1;
-    })
-    console.log(resultado);
-});
+// filtrar.addEventListener("keyup", function () {
+//     const consulta = filtrar.value;
+//     const resultado = countries.filter(function(countrie) {
+//         return countrie.name.toLowerCase().trim().indexOf(consulta.toLowerCase().trim()) > -1;
+//     })
+// });
+
+function filtrado() {
+    filtrar.addEventListener("keyup", function () {
+        const consulta = filtrar.value;
+        const resultado = countries.filter(function (countrie) {
+            countrie.name.toLowerCase().trim().indexOf(consulta.toLowerCase().trim()) > -1;
+        })
+        console.log(resultado);
+        for (let i = 0; i < countries.length; i++) {
+            if (JSON.stringify(resultado) === JSON.stringify(countries[i])) {
+                console.log("ASd");
+            }
+        }
+    });
+}
+
+
+
+filtrado();
 
 infoDePais();
 
