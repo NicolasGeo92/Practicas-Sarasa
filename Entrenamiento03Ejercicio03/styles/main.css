@@ -35,7 +35,10 @@ main {
 }
 
 .filter {
+    height: calc(100vh - 4rem);
     display: none;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
 article {
