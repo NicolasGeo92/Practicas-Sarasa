@@ -73,6 +73,8 @@ function backgroundMouseover() {
             //document.querySelectorAll(".pais")[i].style.backgroundColor = "red";
             this.style.backgroundColor = "rgb(107, 119, 190)";
             //El this hace referencia al elemento que disparó el evento.
+
+            document.getElementById("argen").innerHTML="CAMPEON";
         });
     }
 }
@@ -109,7 +111,6 @@ function filtrado() {
         }
     });
 }
-
 
 filtrado();
 
